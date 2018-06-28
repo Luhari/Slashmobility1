@@ -1,10 +1,28 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Slashmobility</title>
         <link rel="stylesheet" type "text/css" href="style.css">
     </head>
     <body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Do you wanna buy it?</h2>
+                </div>
+                <div class="modal-body">
+                    <input id="Username" class="input" placeholder="Username"></input>
+                    <input id="Password" class="input" placeholder="Password" type="password"></input>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <button class="close" onclick="close()">CANCEL</button>
+                        <button class="confirm" onclick="confirm()">CONFIRM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div>
             <nav class="topnav">
                 <a href="index.html">
@@ -18,7 +36,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                     <div class="column">
@@ -26,7 +44,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                     <div class="column">
@@ -34,7 +52,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                     <div class="column">
@@ -42,7 +60,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                 </div>
@@ -53,7 +71,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                     <div class="column">
@@ -61,7 +79,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                     <div class="column">
@@ -69,7 +87,7 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                     <div class="column">
@@ -77,17 +95,15 @@
                             <img src="images/Nutella.png" style="width: 100%">
                             <h4 class="nameproduct">Nutela</h4>
                             <p class="price">10€</p>
-                            <button class="buyButton" onclick="">BUY</button>
+                            <button class="buyButton" onclick="buy()">BUY</button>
                         </div>
                     </div>
                 </div>
             </main>
+            <footer>
+                <p>&copy Slashmobility 2018</p>
+            </footer>
         </div>
-
-        <footer>
-            <p>&copy Slashmobility 2018</p>
-        </footer>
-
-        <script src="main.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
